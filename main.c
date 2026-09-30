@@ -13,5 +13,7 @@ int main(){
         }
     }
 
+    printTabuleiro(tabuleiro);
+
     return 0;
 }
