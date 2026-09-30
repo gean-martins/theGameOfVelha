@@ -7,7 +7,7 @@
 
 void printTabuleiro(char tab[L][C]){
 
-    printf("+----+----+----+\n");
+    printf("+---+---+---+\n");
 
     for(int i = 0; i < L; i++){
         for(int j = 0; j < C; j++){
@@ -16,6 +16,6 @@ void printTabuleiro(char tab[L][C]){
             
         }
         printf("|\n");
-        printf("+----+----+----+\n");
+        printf("+---+---+---+\n");
     }
 }
