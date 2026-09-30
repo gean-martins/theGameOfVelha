@@ -1,7 +1,5 @@
 #include <stdio.h>
-
-#define L 3
-#define C 3
+#include "tgov.h"
 
 int main(){
 
