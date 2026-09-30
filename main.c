@@ -1,8 +1,11 @@
 #include <stdio.h>
 
+#define L 3
+#define C 3
+
 int main(){
 
-    printf("Olá, mundo!\n");
+    char tabuleiro[L][C];
 
     return 0;
 }
