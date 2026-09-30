@@ -6,6 +6,9 @@
 #ifndef TGOV_H
 #define TGOV_H
 
+//importa as bibliotecas nescessárias
+#include <stdio.h>
+
 //define o tamanho do tabuleiro
 #define L 3
 #define C 3
