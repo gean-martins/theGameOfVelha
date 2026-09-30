@@ -10,6 +10,7 @@
 #define L 3
 #define C 3
 
-/*inserir assinaturas de funções aqui*/
+//FUNÇÕES PRINCIPAIS _________________________________________________________________________
+void printTabuleiro(char tab[L][C]);
 
 #endif
