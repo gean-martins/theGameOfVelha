@@ -35,6 +35,10 @@ int main(){
         } else {
             playerX = true;
         }
+
+        //verificar se o tabuleiro está completo para encerrar o jogo
+
+        system("clear");
     }
     
     return 0;
