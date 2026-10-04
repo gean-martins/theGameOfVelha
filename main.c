@@ -17,6 +17,7 @@ int main(){
     }
 
     while (keepPlaying){
+        system("clear");
         
         printTabuleiro(tabuleiro);
         if (playerX){
@@ -38,9 +39,9 @@ int main(){
 
         //verificar se o tabuleiro está completo para encerrar o jogo
         keepPlaying = continueGame(tabuleiro);
-
-        system("clear");
     }
     
+    printf("JOGO FINALIZADO!\n");
+
     return 0;
 }
