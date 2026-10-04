@@ -85,3 +85,43 @@ void makeChangeOnTab(char tab[L][C], int v[], bool playerX){
         tab[v[0]][v[1]] = 'O';
     }
 }
+
+bool continueGame(char tab[L][C]){
+
+    //verifica as linhas ---------------------------------------------------
+    if(tab[0][0] != ' ' && tab[0][0] == tab[0][1] && tab[0][1] == tab[0][2]){
+        return false;
+    }
+
+    if(tab[1][0] != ' ' && tab[1][0] == tab[1][1] && tab[1][1] == tab[1][2]){
+        return false;
+    }
+
+    if(tab[2][0] != ' ' && tab[2][0] == tab[2][1] && tab[2][1] == tab[2][2]){
+        return false;
+    }
+
+    //verifica as colunas --------------------------------------------------
+    if(tab[0][0] != ' ' && tab[0][0] == tab[1][0] && tab[1][0] == tab[2][0]){
+        return false;
+    }
+
+    if(tab[0][1] != ' ' && tab[0][1] == tab[1][1] && tab[1][1] == tab[2][1]){
+        return false;
+    }
+
+    if(tab[0][2] != ' ' && tab[0][2] == tab[1][2] && tab[1][2] == tab[2][2]){
+        return false;
+    }
+
+    //verifica as diagonais -------------------------------------------------
+    if(tab[0][0] != ' ' && tab[0][0] == tab[1][1] && tab[1][1] == tab[2][2]){
+        return false;
+    }
+
+    if(tab[0][2] != ' ' && tab[0][2] == tab[1][1] && tab[1][1] == tab[0][2]){
+        return false;
+    }
+
+    return true;
+}
