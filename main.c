@@ -28,6 +28,13 @@ int main(){
         scanf("%d", &position);
         convertPosition(position, convertedPosition);
         makeChangeOnTab(tabuleiro, convertedPosition, playerX);
+
+        //passa a vez para o outro jogador
+        if(playerX){
+            playerX = false;
+        } else {
+            playerX = true;
+        }
     }
     
     return 0;
