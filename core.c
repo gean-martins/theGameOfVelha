@@ -119,7 +119,7 @@ bool continueGame(char tab[L][C]){
         return false;
     }
 
-    if(tab[0][2] != ' ' && tab[0][2] == tab[1][1] && tab[1][1] == tab[0][2]){
+    if(tab[0][2] != ' ' && tab[0][2] == tab[1][1] && tab[1][1] == tab[2][0]){
         return false;
     }
 
