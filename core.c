@@ -77,3 +77,11 @@ void convertPosition(int position, int v[]){
     }
 }
 
+void makeChangeOnTab(char tab[L][C], int v[], bool playerX){
+
+    if(playerX){
+        tab[v[0]][v[1]] = 'X';
+    } else{
+        tab[v[0]][v[1]] = 'O';
+    }
+}

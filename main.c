@@ -27,7 +27,7 @@ int main(){
         
         scanf("%d", &position);
         convertPosition(position, convertedPosition);
-        
+        makeChangeOnTab(tabuleiro, convertedPosition, playerX);
     }
     
     return 0;

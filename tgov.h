@@ -17,6 +17,6 @@
 //FUNÇÕES PRINCIPAIS _________________________________________________________________________
 void printTabuleiro(char tab[L][C]);
 void convertPosition(int position, int v[]);
-//void makeChangeOnTab(char tab[L][C])
+void makeChangeOnTab(char tab[L][C], int v[], bool playerX);
 
 #endif
