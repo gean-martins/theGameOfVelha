@@ -41,6 +41,9 @@ int main(){
         keepPlaying = continueGame(tabuleiro);
     }
     
+
+    system("clear");
+    printTabuleiro(tabuleiro);
     printf("JOGO FINALIZADO!\n");
 
     return 0;
