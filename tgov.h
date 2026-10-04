@@ -16,5 +16,7 @@
 
 //FUNÇÕES PRINCIPAIS _________________________________________________________________________
 void printTabuleiro(char tab[L][C]);
+void convertPosition(int position, int v[]);
+//void makeChangeOnTab(char tab[L][C])
 
 #endif

@@ -26,6 +26,8 @@ int main(){
         }
         
         scanf("%d", &position);
+        convertPosition(position, convertedPosition);
+        
     }
     
     return 0;

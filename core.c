@@ -26,3 +26,54 @@ void printTabuleiro(char tab[L][C]){
         printf("+---+---+---+\n");
     }
 }
+
+void convertPosition(int position, int v[]){
+
+    switch (position){
+    case 1:
+        v[0] = 0; 
+        v[1] = 0;
+        break;
+
+    case 2:
+        v[0] = 0;    
+        v[1] = 1;
+        break;
+
+    case 3:
+        v[0] = 0;
+        v[1] = 2;
+        break;
+
+    case 4:
+        v[0] = 1;
+        v[1] = 0;
+        break;
+
+    case 5:
+        v[0] = 1;
+        v[1] = 1;
+        break;
+    
+    case 6:
+        v[0] = 1;
+        v[1] = 2;
+        break;
+
+    case 7:
+        v[0] = 2;
+        v[1] = 0;
+        break;
+
+    case 8:
+        v[0] = 2;
+        v[1] = 1;
+        break;
+
+    case 9:
+        v[0] = 2;
+        v[1] = 2;
+        break;
+    }
+}
+
