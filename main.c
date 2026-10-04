@@ -3,6 +3,8 @@
 int main(){
 
     char tabuleiro[L][C];
+    bool playerX = true;
+    bool keepPlaying = true;
 
     //preenche o tabuleiro com espaço em branco
     for(int i = 0; i < L; i++){
@@ -12,7 +14,11 @@ int main(){
         }
     }
 
-    printTabuleiro(tabuleiro);
-
+    while (keepPlaying){
+        
+        printTabuleiro(tabuleiro);
+        
+    }
+    
     return 0;
 }
