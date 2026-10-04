@@ -5,6 +5,8 @@ int main(){
     char tabuleiro[L][C];
     bool playerX = true;
     bool keepPlaying = true;
+    int position; //posicao digitada pelo usuário
+    int convertedPosition[2]; //posicao convertida, será usada para alterar a matriz
 
     //preenche o tabuleiro com espaço em branco
     for(int i = 0; i < L; i++){
@@ -17,7 +19,13 @@ int main(){
     while (keepPlaying){
         
         printTabuleiro(tabuleiro);
+        if (playerX){
+            printf("Digite uma posicao para o jogador X: \n");
+        } else{
+            printf("Digite uma posicao para o jogador O: \n");
+        }
         
+        scanf("%d", &position);
     }
     
     return 0;
