@@ -20,5 +20,6 @@ void printTabuleiro(char tab[L][C]);
 void convertPosition(int position, int v[]);
 void makeChangeOnTab(char tab[L][C], int v[], bool playerX);
 bool continueGame(char tab[L][C]);
+bool chekBlankPosition(int position[], char tab[L][C]);
 
 #endif
