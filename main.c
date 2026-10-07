@@ -5,6 +5,7 @@ int main(){
     char tabuleiro[L][C];
     bool playerX = true;
     bool keepPlaying = true;
+    bool outsideRange;
     int position; //posicao digitada pelo usuário
     int convertedPosition[2]; //posicao convertida, será usada para alterar a matriz
 
@@ -20,13 +21,25 @@ int main(){
         system("clear");
         
         printTabuleiro(tabuleiro);
-        if (playerX){
-            printf("Digite uma posicao para o jogador X: \n");
-        } else{
-            printf("Digite uma posicao para o jogador O: \n");
-        }
         
-        scanf("%d", &position);
+        do{
+            if (playerX){
+                printf("Digite uma posicao para o jogador X: \n");
+            } else{
+                printf("Digite uma posicao para o jogador O: \n");
+            }
+
+            scanf("%d", &position);
+            
+            if (position < 1 || position > 9){
+                outsideRange = true;
+                printf("Tentativa de jogar fora do tabuleiro, tente novamente...\n");
+            } else {
+                outsideRange = false;
+            }
+            
+        } while (outsideRange);
+        
         convertPosition(position, convertedPosition);
         makeChangeOnTab(tabuleiro, convertedPosition, playerX);
 
