@@ -27,6 +27,16 @@ void printTabuleiro(char tab[L][C]){
     }
 }
 
+bool chekBlankPosition(int position[], char tab[L][C]){
+
+    if (tab[position[0]][position[1]] == ' '){
+        return false;
+    } else {
+        printf("Tentativa de sobrescrita de uma jogada anterior, tente novamente...\n");
+        return true;
+    }
+}
+
 void convertPosition(int position, int v[]){
 
     switch (position){
