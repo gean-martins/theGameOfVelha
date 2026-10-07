@@ -35,13 +35,12 @@ int main(){
                 invalidPosition = true;
                 printf("Tentativa de jogar fora do tabuleiro, tente novamente...\n");
             } else {
-                //verificar se a posição desejada está em branco, se sim, jogue, senão, não jogue
-                //invalidPosition = false;
+                convertPosition(position, convertedPosition);
+                invalidPosition = chekBlankPosition(convertedPosition, tabuleiro);
             }
             
         } while (invalidPosition);
         
-        convertPosition(position, convertedPosition);
         makeChangeOnTab(tabuleiro, convertedPosition, playerX);
 
         //passa a vez para o outro jogador
