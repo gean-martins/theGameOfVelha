@@ -51,8 +51,8 @@ int main(){
         }
 
         //verificar se o tabuleiro está completo para encerrar o jogo
-        keepPlaying = checkVictoryCase(tabuleiro);
         keepPlaying = checkFullTab(tabuleiro);
+        keepPlaying = checkVictoryCase(tabuleiro);
     }
     
 
