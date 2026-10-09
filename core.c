@@ -96,7 +96,7 @@ void makeChangeOnTab(char tab[L][C], int v[], bool playerX){
     }
 }
 
-bool continueGame(char tab[L][C]){
+bool checkVictoryCase(char tab[L][C]){
 
     //verifica as linhas ---------------------------------------------------
     if(tab[0][0] != ' ' && tab[0][0] == tab[0][1] && tab[0][1] == tab[0][2]){

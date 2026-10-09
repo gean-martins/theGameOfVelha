@@ -51,7 +51,7 @@ int main(){
         }
 
         //verificar se o tabuleiro está completo para encerrar o jogo
-        keepPlaying = continueGame(tabuleiro);
+        keepPlaying = checkVictoryCase(tabuleiro);
     }
     
 
