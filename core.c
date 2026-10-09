@@ -135,3 +135,16 @@ bool checkVictoryCase(char tab[L][C]){
 
     return true;
 }
+
+bool checkFullTab(char tab[L][C]){
+
+    for(int i = 0; i < L; i++){
+        for(int j = 0; j < C; j++){
+            if(tab[i][j] == ' '){
+                return true;
+            }
+        }
+    }
+
+    return false;
+}
