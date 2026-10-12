@@ -12,3 +12,23 @@ Jogo da velha clássico, mas com trapaças
 |        :x:         | ```mines```          | Planta uma bomba em uma posicao, se alguém jogar nela, perde instantaneamente                                                                                                                                                                                         |
 |        :x:         | ```ai```             | Deixa o computador jogar em uma posição aleatória pelo jogador atual                                                                                                                                                                                                  |
 
+## Setup
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/gean-martins/theGameOfVelha.git
+   ```
+2. Entre na pasta:
+   ```bash
+   cd theGameOfVelha
+   ```
+
+## Compile e execute
+Dentro da pasta ```theGameOfVelha```, execute o comando:
+```bash
+gcc *.c -o theGameOfVelha
+```
+
+Após a compilação, execute o jogo com o comando abaixo:
+```bash
+./theGameOfVelha
+```
