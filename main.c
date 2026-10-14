@@ -74,6 +74,7 @@ int main(){
                 invalidOptionCheat = checkValidOptionForCheat;
             } while (invalidOptionCheat);
             
+            cheatRouter(cheatOpt);
         }
 
         //passa a vez para o outro jogador
