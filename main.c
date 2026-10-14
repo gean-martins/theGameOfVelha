@@ -28,6 +28,12 @@ int main(){
         
         //pergunta se o jogador quer jogar normalmente ou trapacear
         do{
+            if (playerX){
+                printf("Vez de: Jogador X\n");
+            } else{
+                printf("Vez de: Jogador O\n");
+            }
+
             printf("[1] - Jogar em uma posicao do tabuleiro.\n");
             printf("[2] - Trapacear.\n");
             printf("Digite a opcao desejada: ");
@@ -40,12 +46,6 @@ int main(){
         if(stateOpt == 1){
             //loop para [jogar normalmente]
             do{
-                if (playerX){
-                    printf("Digite uma posicao para o jogador X: \n");
-                } else{
-                    printf("Digite uma posicao para o jogador O: \n");
-                }
-    
                 scanf("%d", &position);
                 
                 if (position < 1 || position > 9){
@@ -68,10 +68,10 @@ int main(){
                 printf("[4] - [pass-or-repass] - (Passe a vez para o outro jogador!)\n");
                 printf("[5] - [mines]          - (Plante uma bomba no tabuleiro!)\n");
                 printf("[6] - [AI]             - (Deixe o computador jogar por 1 turno no seu lugar)\n");
-                printf("Escolha a trapaca desejada:");
+                printf("Escolha a trapaca desejada: ");
                 scanf("%d", &cheatOpt);
 
-                invalidOptionCheat = checkValidOptionForCheat;
+                invalidOptionCheat = checkValidOptionForCheat(cheatOpt);
             } while (invalidOptionCheat);
             
             cheatRouter(cheatOpt);
