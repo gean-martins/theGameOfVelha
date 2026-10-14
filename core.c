@@ -148,3 +148,17 @@ bool checkFullTab(char tab[L][C]){
 
     return false;
 }
+
+bool checkValidOption(int opt){
+
+    if(opt == 1){
+        return false;
+    } else if(opt == 2){
+        return false;
+    } else{
+        printf("Opcao invalida, tente novamente...\n");
+        return true;
+    }
+}
+
+
