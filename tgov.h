@@ -25,5 +25,6 @@ bool checkFullTab(char tab[L][C]);
 
 //FUNÇÕES DE TRAPAÇA
 bool checkValidOptionForState(int opt);
+bool checkValidOptionForCheat(int opt){}
 
 #endif
