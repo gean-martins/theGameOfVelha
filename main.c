@@ -6,6 +6,7 @@ int main(){
     bool playerX = true;
     bool keepPlaying = true;
     bool invalidPosition;
+    bool invalidOption;
     int position; //posicao digitada pelo usuário
     int convertedPosition[2]; //posicao convertida, será usada para alterar a matriz
     int opt;
@@ -23,26 +24,42 @@ int main(){
         
         printTabuleiro(tabuleiro);
         
+        //pergunta se o jogador quer jogar normalmente ou trapacear
         do{
-            if (playerX){
-                printf("Digite uma posicao para o jogador X: \n");
-            } else{
-                printf("Digite uma posicao para o jogador O: \n");
-            }
+            printf("[1] - Jogar em uma posicao do tabuleiro.\n");
+            printf("[2] - Trapacear.\n");
+            printf("Digite a opcao desejada: ");
+            scanf("%d", &opt);
 
-            scanf("%d", &position);
+            invalidOption = checkValidOption(opt);
             
-            if (position < 1 || position > 9){
-                invalidPosition = true;
-                printf("Tentativa de jogar fora do tabuleiro, tente novamente...\n");
-            } else {
-                convertPosition(position, convertedPosition);
-                invalidPosition = chekBlankPosition(convertedPosition, tabuleiro);
-            }
-            
-        } while (invalidPosition);
+        } while (invalidOption);
         
-        makeChangeOnTab(tabuleiro, convertedPosition, playerX);
+        if(opt == 1){
+            //loop para [jogar normalmente]
+            do{
+                if (playerX){
+                    printf("Digite uma posicao para o jogador X: \n");
+                } else{
+                    printf("Digite uma posicao para o jogador O: \n");
+                }
+    
+                scanf("%d", &position);
+                
+                if (position < 1 || position > 9){
+                    invalidPosition = true;
+                    printf("Tentativa de jogar fora do tabuleiro, tente novamente...\n");
+                } else {
+                    convertPosition(position, convertedPosition);
+                    invalidPosition = chekBlankPosition(convertedPosition, tabuleiro);
+                }
+                
+            } while (invalidPosition);
+            
+            makeChangeOnTab(tabuleiro, convertedPosition, playerX);
+        } else {
+            
+        }
 
         //passa a vez para o outro jogador
         if(playerX){
@@ -50,13 +67,12 @@ int main(){
         } else {
             playerX = true;
         }
-
+        
         //verificar se o tabuleiro está cheio ou se alguém ganhou para encerrar o jogo
         keepPlaying = checkFullTab(tabuleiro);
         keepPlaying = checkVictoryCase(tabuleiro);
     }
     
-
     system("clear");
     printTabuleiro(tabuleiro);
     printf("JOGO FINALIZADO!\n");
