@@ -149,7 +149,7 @@ bool checkFullTab(char tab[L][C]){
     return false;
 }
 
-bool checkValidOption(int opt){
+bool checkValidOptionForState(int opt){
 
     if(opt == 1){
         return false;
@@ -162,3 +162,16 @@ bool checkValidOption(int opt){
 }
 
 
+
+//void cheatRouter(){
+//
+//    switch (expression)
+//    {
+//    case constant expression:
+//        /* code */
+//        break;
+//    
+//    default:
+//        break;
+//    }
+//}
