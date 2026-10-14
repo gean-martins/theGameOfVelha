@@ -15,6 +15,9 @@
 #define L 3
 #define C 3
 
+//define a quantidade de cheats que o jogo possui
+#define QTD_OF_CHEATS 6
+
 //FUNÇÕES PRINCIPAIS _________________________________________________________________________
 void printTabuleiro(char tab[L][C]);
 void convertPosition(int position, int v[]);
