@@ -8,6 +8,7 @@ int main(){
     bool invalidPosition;
     int position; //posicao digitada pelo usuário
     int convertedPosition[2]; //posicao convertida, será usada para alterar a matriz
+    int opt;
 
     //preenche o tabuleiro com espaço em branco
     for(int i = 0; i < L; i++){
