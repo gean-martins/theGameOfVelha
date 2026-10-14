@@ -16,19 +16,10 @@ Jogo da velha clássico, mas com trapaças
 1. Clone o repositório:
    ```bash
    git clone https://github.com/gean-martins/theGameOfVelha.git
-   ```
-2. Entre na pasta:
-   ```bash
    cd theGameOfVelha
    ```
-
-## Compile e execute
-Dentro da pasta ```theGameOfVelha```, execute o comando:
-```bash
-gcc *.c -o theGameOfVelha
-```
-
-Após a compilação, execute o jogo com o comando abaixo:
-```bash
-./theGameOfVelha
-```
+2. Compile e execute:
+   ```bash
+   gcc *.c -o theGameOfVelha
+   ./theGameOfVelha
+   ```
