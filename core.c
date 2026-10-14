@@ -171,15 +171,32 @@ bool checkValidOptionForCheat(int opt){
     }
 }
 
-//void cheatRouter(){
-//
-//    switch (expression)
-//    {
-//    case constant expression:
-//        /* code */
-//        break;
-//    
-//    default:
-//        break;
-//    }
-//}
+void cheatRouter(int opt){
+
+    switch (opt)
+    {
+    case 1:
+        printf("[bit-flip] não implementado\n");
+        break;
+    
+    case 2:
+        printf("[trixie] não implementado\n");
+        break;
+    
+    case 3:
+        printf("[random] não implementado\n");
+        break;
+
+    case 4:
+        printf("[pass-or-repass] não implementado\n");
+        break;
+
+    case 5:
+        printf("[mines] não implementado\n");
+        break;
+
+    case 6:
+        printf("[AI] não implementado\n");
+        break;
+    }
+}
