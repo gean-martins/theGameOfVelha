@@ -161,7 +161,15 @@ bool checkValidOptionForState(int opt){
     }
 }
 
+bool checkValidOptionForCheat(int opt){
 
+    if(opt >= 1 && opt <= QTD_OF_CHEATS){
+        return false;
+    } else{
+        printf("Opcao invalida, tente novamente...\n");
+        return true;
+    }
+}
 
 //void cheatRouter(){
 //
