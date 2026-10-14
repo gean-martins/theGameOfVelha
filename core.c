@@ -176,27 +176,27 @@ void cheatRouter(int opt){
     switch (opt)
     {
     case 1:
-        printf("[bit-flip] não implementado\n");
+        //do something...
         break;
     
     case 2:
-        printf("[trixie] não implementado\n");
+        //do something...
         break;
     
     case 3:
-        printf("[random] não implementado\n");
+        //do something...
         break;
 
     case 4:
-        printf("[pass-or-repass] não implementado\n");
+        //é pra fazer nada mesmo
         break;
 
     case 5:
-        printf("[mines] não implementado\n");
+        //do something...
         break;
 
     case 6:
-        printf("[AI] não implementado\n");
+        //do something...
         break;
     }
 }
