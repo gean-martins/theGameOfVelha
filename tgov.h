@@ -24,6 +24,6 @@ bool chekBlankPosition(int position[], char tab[L][C]);
 bool checkFullTab(char tab[L][C]);
 
 //FUNÇÕES DE TRAPAÇA
-bool checkValidOption(int opt);
+bool checkValidOptionForState(int opt);
 
 #endif
