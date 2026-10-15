@@ -30,5 +30,6 @@ bool checkFullTab(char tab[L][C]);
 bool checkValidOptionForState(int opt);
 bool checkValidOptionForCheat(int opt);
 void cheatRouter(int opt, char tab[L][C]);
+void bitFlip(char tab[L][C]);
 
 #endif
