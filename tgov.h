@@ -29,6 +29,6 @@ bool checkFullTab(char tab[L][C]);
 //FUNÇÕES DE TRAPAÇA
 bool checkValidOptionForState(int opt);
 bool checkValidOptionForCheat(int opt);
-void cheatRouter(int opt);
+void cheatRouter(int opt, char tab[L][C]);
 
 #endif
