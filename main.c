@@ -46,6 +46,7 @@ int main(){
         if(stateOpt == 1){
             //loop para [jogar normalmente]
             do{
+                printf("Digite uma posicao para jogar: ");
                 scanf("%d", &position);
                 
                 if (position < 1 || position > 9){
