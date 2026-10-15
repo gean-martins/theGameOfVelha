@@ -169,12 +169,11 @@ bool checkValidOptionForCheat(int opt){
     }
 }
 
-void cheatRouter(int opt){
+void cheatRouter(int opt, char tab[L][C]){
 
-    switch (opt)
-    {
+    switch (opt){
     case 1:
-        //do something...
+        bitFlip(tab);
         break;
     
     case 2:
@@ -196,5 +195,17 @@ void cheatRouter(int opt){
     case 6:
         //do something...
         break;
+    }
+}
+
+void bitFlip(char tab[L][C]){
+    for(int i = 0; i < L; i++){
+        for(int j = 0; j < C; j++){
+            if(tab[i][j] == 'X'){
+                tab[i][j] = 'O';
+            } else if(tab[i][j] == 'O'){
+                tab[i][j] = 'X';
+            }
+        }
     }
 }
