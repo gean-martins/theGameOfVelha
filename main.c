@@ -12,15 +12,15 @@ int main(){
     int convertedPosition[2]; //posicao convertida, será usada para alterar a matriz
     int stateOpt;
     int cheatOpt;
-
+    
     //preenche o tabuleiro com espaço em branco
     for(int i = 0; i < L; i++){
         for(int j = 0; j < C; j++){
-
+            
             tabuleiro[i][j] = ' ';
         }
     }
-
+    
     while (keepPlaying){
         system("clear");
         
@@ -33,12 +33,12 @@ int main(){
             } else{
                 printf("Vez de: Jogador O\n");
             }
-
+            
             printf("[1] - Jogar em uma posicao do tabuleiro.\n");
             printf("[2] - Trapacear.\n");
             printf("Digite a opcao desejada: ");
             scanf("%d", &stateOpt);
-
+            
             invalidOptionState = checkValidOptionForState(stateOpt);
             
         } while (invalidOptionState);
@@ -71,13 +71,13 @@ int main(){
                 printf("[6] - [AI]             - (Deixe o computador jogar por 1 turno no seu lugar)\n");
                 printf("Escolha a trapaca desejada: ");
                 scanf("%d", &cheatOpt);
-
+                
                 invalidOptionCheat = checkValidOptionForCheat(cheatOpt);
             } while (invalidOptionCheat);
             
             cheatRouter(cheatOpt, tabuleiro);
         }
-
+        
         //passa a vez para o outro jogador
         if(playerX){
             playerX = false;
@@ -86,8 +86,9 @@ int main(){
         }
         
         //verificar se o tabuleiro está cheio ou se alguém ganhou para encerrar o jogo
-        keepPlaying = checkFullTab(tabuleiro);
-        keepPlaying = checkVictoryCase(tabuleiro);
+        if(!checkFullTab(tabuleiro) || !checkVictoryCase(tabuleiro)){
+            break;
+        }
     }
     
     system("clear");
