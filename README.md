@@ -3,6 +3,9 @@ Jogo da velha clássico, mas com trapaças
 
 ## Códigos
 
+> [!NOTE]
+> Os códigos não implementados realizam o mesmo efeito do ```pass-or-repass```, cheat 4.
+
 | Está implementado? | Código               | O que faz?                                                                                                                                                                                                                                                            |
 | :----------------: | :------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |        :white_check_mark:         | ```bit-flip```       | Troca ```X``` por ```O``` e vice-versa                                                                                                                                                                                                                                |
