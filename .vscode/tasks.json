@@ -1,0 +1,26 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc build multi-arquivo",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}/*.c"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Tarefa gerada para compilar múltiplos arquivos C com símbolos de debug."
+        }
+    ],
+    "version": "2.0.0"
+}

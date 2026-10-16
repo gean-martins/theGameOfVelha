@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C/C++: GDB Depurar Projeto",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/a.out",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "description": "Habilitar impressão formatada para gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignore": true
+                }
+            ],
+            "preLaunchTask": "C/C++: gcc build multi-arquivo"
+        }
+    ]
+}
