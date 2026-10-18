@@ -100,40 +100,40 @@ bool checkVictoryCase(char tab[L][C]){
 
     //verifica as linhas ---------------------------------------------------
     if(tab[0][0] != ' ' && tab[0][0] == tab[0][1] && tab[0][1] == tab[0][2]){
-        return false;
+        return true;
     }
 
     if(tab[1][0] != ' ' && tab[1][0] == tab[1][1] && tab[1][1] == tab[1][2]){
-        return false;
+        return true;
     }
 
     if(tab[2][0] != ' ' && tab[2][0] == tab[2][1] && tab[2][1] == tab[2][2]){
-        return false;
+        return true;
     }
 
     //verifica as colunas --------------------------------------------------
     if(tab[0][0] != ' ' && tab[0][0] == tab[1][0] && tab[1][0] == tab[2][0]){
-        return false;
+        return true;
     }
 
     if(tab[0][1] != ' ' && tab[0][1] == tab[1][1] && tab[1][1] == tab[2][1]){
-        return false;
+        return true;
     }
 
     if(tab[0][2] != ' ' && tab[0][2] == tab[1][2] && tab[1][2] == tab[2][2]){
-        return false;
+        return true;
     }
 
     //verifica as diagonais -------------------------------------------------
     if(tab[0][0] != ' ' && tab[0][0] == tab[1][1] && tab[1][1] == tab[2][2]){
-        return false;
+        return true;
     }
 
     if(tab[0][2] != ' ' && tab[0][2] == tab[1][1] && tab[1][1] == tab[2][0]){
-        return false;
+        return true;
     }
 
-    return true;
+    return false;
 }
 
 bool checkFullTab(char tab[L][C]){
@@ -141,12 +141,12 @@ bool checkFullTab(char tab[L][C]){
     for(int i = 0; i < L; i++){
         for(int j = 0; j < C; j++){
             if(tab[i][j] == ' '){
-                return true;
+                return false;
             }
         }
     }
 
-    return false;
+    return true;
 }
 
 bool checkValidOptionForState(int opt){
