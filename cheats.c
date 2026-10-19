@@ -66,7 +66,7 @@ bool trixie(){
         if(userNumber >= 1 && userNumber <= 6){
             invalidNumber = false;
         } else {
-            printf("Ei, eh pra tentar adivinhar um numero de 1 a 6, tenta de novo...\n");
+            printf("Ei! Eh pra tentar adivinhar um numero de 1 a 6, tenta de novo...\n");
             invalidNumber = true;
         }
 
@@ -84,7 +84,7 @@ bool trixie(){
         sleep(5);
         return true;
     } else {
-        printf("Voce errou o numero que eu estava pensando, quem sabe da proxima...\n");
+        printf("Voce errou o numero que eu estava pensando, quem sabe na proxima...\n");
         sleep(5);
         return false;
     }
