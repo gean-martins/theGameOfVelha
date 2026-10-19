@@ -46,3 +46,46 @@ void bitFlip(char tab[L][C]){
         }
     }
 }
+
+bool trixie(){
+
+    int userNumber;
+    int trixieNumber;
+    bool invalidNumber;
+
+    system("clear");
+
+    printf("Eu sou a grande e poderosa TRIXIE!\n");
+    sleep(3);
+    printf("E se voce advinhar o numero que eu estou pensando, você ganha o jogo na hora!\n");
+    sleep(4);
+
+    do{
+        printf("Digite um numero de 1 a 6: ");
+        scanf("%d", &userNumber);
+        if(userNumber >= 1 && userNumber <= 6){
+            invalidNumber = false;
+        } else {
+            printf("Ei, eh pra tentar adivinhar um numero de 1 a 6, tenta de novo...\n");
+            invalidNumber = true;
+        }
+
+    } while (invalidNumber);
+
+    printf("O numero que eu estou pensando eh...\n");
+    sleep(5);
+
+    trixieNumber = (rand() % 6) + 1;
+    printf("%d!\n", trixieNumber);
+    sleep(2);
+
+    if(trixieNumber == userNumber){
+        printf("Voce acertou o numero que eu estava pensando!\n");
+        sleep(5);
+        return true;
+    } else {
+        printf("Voce errou o numero que eu estava pensando, quem sabe da proxima...\n");
+        sleep(5);
+        return false;
+    }
+}
