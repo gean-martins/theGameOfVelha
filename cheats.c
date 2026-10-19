@@ -13,7 +13,7 @@ void cheatRouter(int opt, char tab[L][C], bool* winWithTrixie){
         break;
     
     case 2:
-        //do something...
+        *winWithTrixie = trixie();
         break;
     
     case 3:
