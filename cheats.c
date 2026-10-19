@@ -5,7 +5,7 @@
 
 #include "tgov.h"
 
-void cheatRouter(int opt, char tab[L][C]){
+void cheatRouter(int opt, char tab[L][C], bool* winWithTrixie){
 
     switch (opt){
     case 1:
