@@ -89,7 +89,7 @@ int main(){
         }
         
         //verificar se o tabuleiro está cheio ou se alguém ganhou para encerrar o jogo
-        if(checkFullTab(tabuleiro) || checkVictoryCase(tabuleiro)){
+        if(checkFullTab(tabuleiro) || checkVictoryCase(tabuleiro) || winWithTrixie){
             keepPlaying = false;
         }
     }
