@@ -78,7 +78,7 @@ int main(){
                 invalidOptionCheat = checkValidOptionForCheat(cheatOpt);
             } while (invalidOptionCheat);
             
-            cheatRouter(cheatOpt, tabuleiro);
+            cheatRouter(cheatOpt, tabuleiro, &winWithTrixie);
         }
         
         //passa a vez para o outro jogador
