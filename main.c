@@ -8,6 +8,7 @@ int main(){
     bool invalidPosition;
     bool invalidOptionState;
     bool invalidOptionCheat;
+    bool winWithTrixie = false;
     int position; //posicao digitada pelo usuário
     int convertedPosition[2]; //posicao convertida, será usada para alterar a matriz
     int stateOpt;
