@@ -58,7 +58,7 @@ bool trixie(){
     printf("Eu sou a grande e poderosa TRIXIE!\n");
     sleep(3);
     printf("E se voce advinhar o numero que eu estou pensando, você ganha o jogo na hora!\n");
-    sleep(4);
+    sleep(5);
 
     do{
         printf("Digite um numero de 1 a 6: ");
@@ -81,11 +81,11 @@ bool trixie(){
 
     if(trixieNumber == userNumber){
         printf("Voce acertou o numero que eu estava pensando!\n");
-        sleep(5);
+        sleep(4);
         return true;
     } else {
         printf("Voce errou o numero que eu estava pensando, quem sabe na proxima...\n");
-        sleep(5);
+        sleep(4);
         return false;
     }
 }
