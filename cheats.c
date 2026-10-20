@@ -72,11 +72,16 @@ bool trixie(){
 
     } while (invalidNumber);
 
-    printf("O numero que eu estou pensando eh...\n");
-    sleep(5);
+    printf("O numero que eu estou pensando eh");
+    fflush(stdout);
+    for(int i = 0; i < 5; i++){
+        sleep(1);
+        printf(".");
+        fflush(stdout);
+    }
 
     trixieNumber = (rand() % 6) + 1;
-    printf("%d!\n", trixieNumber);
+    printf("\n%d!\n", trixieNumber);
     sleep(2);
 
     if(trixieNumber == userNumber){
