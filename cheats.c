@@ -94,3 +94,18 @@ bool trixie(){
         return false;
     }
 }
+
+void ai(char tab[L][C], bool playerX){
+
+    int randomPositions[2];
+    bool invalidRandomPositions;
+
+    do{
+        randomPositions[0] = rand() % 2;
+        randomPositions[1] = rand() % 2;
+
+        invalidRandomPositions = chekBlankPosition(randomPositions, tab, false);
+    } while (invalidRandomPositions);
+    
+    makeChangeOnTab(tab, randomPositions, playerX);
+}
