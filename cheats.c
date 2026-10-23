@@ -5,7 +5,7 @@
 
 #include "tgov.h"
 
-void cheatRouter(int opt, char tab[L][C], bool* winWithTrixie){
+void cheatRouter(int opt, char tab[L][C], bool* winWithTrixie, bool playerX){
 
     switch (opt){
     case 1:
@@ -29,7 +29,7 @@ void cheatRouter(int opt, char tab[L][C], bool* winWithTrixie){
         break;
 
     case 6:
-        //do something...
+        ai(tab, playerX);
         break;
     }
 }
