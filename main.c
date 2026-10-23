@@ -57,7 +57,7 @@ int main(){
                     printf("Tentativa de jogar fora do tabuleiro, tente novamente...\n");
                 } else {
                     convertPosition(position, convertedPosition);
-                    invalidPosition = chekBlankPosition(convertedPosition, tabuleiro);
+                    invalidPosition = chekBlankPosition(convertedPosition, tabuleiro, true);
                 }
                 
             } while (invalidPosition);
@@ -78,7 +78,7 @@ int main(){
                 invalidOptionCheat = checkValidOptionForCheat(cheatOpt);
             } while (invalidOptionCheat);
             
-            cheatRouter(cheatOpt, tabuleiro, &winWithTrixie);
+            cheatRouter(cheatOpt, tabuleiro, &winWithTrixie, playerX);
         }
         
         //passa a vez para o outro jogador
