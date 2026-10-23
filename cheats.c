@@ -101,8 +101,8 @@ void ai(char tab[L][C], bool playerX){
     bool invalidRandomPositions;
 
     do{
-        randomPositions[0] = rand() % 2;
-        randomPositions[1] = rand() % 2;
+        randomPositions[0] = rand() % 3;
+        randomPositions[1] = rand() % 3;
 
         invalidRandomPositions = chekBlankPosition(randomPositions, tab, false);
     } while (invalidRandomPositions);
