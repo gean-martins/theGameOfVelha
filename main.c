@@ -75,7 +75,7 @@ int main(){
             cheatRouter(cheatOpt, tabuleiro, &winWithTrixie, playerX);
         }
         
-        
+        playerX = switchPlayer(playerX);
         
         //verificar se o tabuleiro está cheio ou se alguém ganhou para encerrar o jogo
         if(checkFullTab(tabuleiro) || checkVictoryCase(tabuleiro) || winWithTrixie){
