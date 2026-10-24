@@ -16,7 +16,7 @@ int main(){
     
     srand(time(NULL));
 
-    startBlankTabuleiro(tabuleiro);
+    clearTabuleiro(tabuleiro);
     
     while (keepPlaying){
         system("clear");

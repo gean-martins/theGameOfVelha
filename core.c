@@ -171,7 +171,7 @@ bool checkValidOptionForCheat(int opt){
     }
 }
 
-void startBlankTabuleiro(char tab[L][C]){
+void clearTabuleiro(char tab[L][C]){
 
     //preenche o tabuleiro com espaço em branco
     for(int i = 0; i < L; i++){
