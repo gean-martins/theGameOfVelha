@@ -181,3 +181,13 @@ void startBlankTabuleiro(char tab[L][C]){
         }
     }
 }
+
+//passa a vez para o outro jogador
+bool switchPlayer(bool playerX){
+
+        if(playerX){
+            return false;
+        } else {
+            return true;
+        }
+}

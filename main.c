@@ -75,12 +75,7 @@ int main(){
             cheatRouter(cheatOpt, tabuleiro, &winWithTrixie, playerX);
         }
         
-        //passa a vez para o outro jogador
-        if(playerX){
-            playerX = false;
-        } else {
-            playerX = true;
-        }
+        
         
         //verificar se o tabuleiro está cheio ou se alguém ganhou para encerrar o jogo
         if(checkFullTab(tabuleiro) || checkVictoryCase(tabuleiro) || winWithTrixie){
