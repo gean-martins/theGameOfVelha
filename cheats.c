@@ -109,3 +109,11 @@ void ai(char tab[L][C], bool playerX){
     
     makeChangeOnTab(tab, randomPositions, playerX);
 }
+
+void random(char tab[L][C], bool playerX){
+
+    clearTabuleiro(tab);
+    ai(tab, playerX);
+    switchPlayer(playerX);
+    ai(tab, playerX);
+}
