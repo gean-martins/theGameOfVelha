@@ -114,6 +114,6 @@ void randomCheat(char tab[L][C], bool playerX){
 
     clearTabuleiro(tab);
     ai(tab, playerX);
-    switchPlayer(playerX);
+    playerX = switchPlayer(playerX);
     ai(tab, playerX);
 }
