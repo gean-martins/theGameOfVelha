@@ -37,5 +37,6 @@ void cheatRouter(int opt, char tab[L][C], bool* winWithTrixie, bool playerX);
 void bitFlip(char tab[L][C]);
 bool trixie();
 void ai(char tab[L][C], bool playerX);
+void random(char tab[L][C], bool playerX);
 
 #endif
