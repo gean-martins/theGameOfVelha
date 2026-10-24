@@ -28,6 +28,7 @@ bool checkVictoryCase(char tab[L][C]);
 bool chekBlankPosition(int position[], char tab[L][C], bool playerTrigger);
 bool checkFullTab(char tab[L][C]);
 void startBlankTabuleiro(char tab[L][C]);
+bool switchPlayer(bool playerX);
 
 //FUNÇÕES DE TRAPAÇA
 bool checkValidOptionForState(int opt);
