@@ -17,7 +17,7 @@ void cheatRouter(int opt, char tab[L][C], bool* winWithTrixie, bool playerX){
         break;
     
     case 3:
-        random(tab, playerX);
+        randomCheat(tab, playerX);
         break;
 
     case 4:
@@ -110,7 +110,7 @@ void ai(char tab[L][C], bool playerX){
     makeChangeOnTab(tab, randomPositions, playerX);
 }
 
-void random(char tab[L][C], bool playerX){
+void randomCheat(char tab[L][C], bool playerX){
 
     clearTabuleiro(tab);
     ai(tab, playerX);
