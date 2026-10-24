@@ -27,6 +27,7 @@ void makeChangeOnTab(char tab[L][C], int v[], bool playerX);
 bool checkVictoryCase(char tab[L][C]);
 bool chekBlankPosition(int position[], char tab[L][C], bool playerTrigger);
 bool checkFullTab(char tab[L][C]);
+void startBlankTabuleiro(char tab[L][C]);
 
 //FUNÇÕES DE TRAPAÇA
 bool checkValidOptionForState(int opt);
