@@ -13,7 +13,7 @@ Jogo da velha clássico, mas com trapaças
 |        :x:         | ```random```         | Limpa o tabuleiro e posiciona um ```X``` e um ```O``` nele                                                                                                                                                                                                            |
 |        :white_check_mark:         | ```pass-or-repass``` | Passa a vez para o outro jogador                                                                                                                                                                                                                                      |
 |        :x:         | ```mines```          | Planta uma bomba em uma posicao, se alguém jogar nela, perde instantaneamente                                                                                                                                                                                         |
-|        :x:         | ```ai```             | Deixa o computador jogar em uma posição aleatória pelo jogador atual                                                                                                                                                                                                  |
+|        :white_check_mark:         | ```ai```             | Deixa o computador jogar em uma posição aleatória pelo jogador atual                                                                                                                                                                                                  |
 
 ## Setup
 1. Clone o repositório:
