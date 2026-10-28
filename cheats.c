@@ -25,7 +25,7 @@ void cheatRouter(int opt, char tab[L][C], bool* winWithTrixie, bool playerX){
         break;
 
     case 5:
-        //do something...
+        mines(tab);
         break;
 
     case 6:
@@ -128,12 +128,18 @@ void mines(char tab[L][C]){
         printf("Digite a posicao em que deseja plantar a bomba: ");
         scanf("%d", &NotConvertedPosition);
     
-        convertPosition(NotConvertedPosition, convertedPosition);
-        invalidPositionForBomb = chekBlankPosition(convertedPosition, tab, false);
-
-        if(invalidPositionForBomb){
+        if(NotConvertedPosition >= 1 && NotConvertedPosition <= 9){
+            
+            convertPosition(NotConvertedPosition, convertedPosition);
+            invalidPositionForBomb = chekBlankPosition(convertedPosition, tab, false);
+            if(invalidPositionForBomb){
+                printf("Posicao invalida, tente novamente...\n");
+            }
+        } else {
             printf("Posicao invalida, tente novamente...\n");
+            invalidPositionForBomb = true;
         }
+
     } while (invalidPositionForBomb);
     
     printf("Plantando a bomba");
@@ -145,7 +151,7 @@ void mines(char tab[L][C]){
     }
 
     tab[convertedPosition[0]][convertedPosition[1]] = 'B';
-    printf("Bomba plantada!\n");
+    printf("\nBomba plantada!\n");
     sleep(1);
 }
 
