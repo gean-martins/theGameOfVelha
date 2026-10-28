@@ -117,3 +117,34 @@ void randomCheat(char tab[L][C], bool playerX){
     playerX = switchPlayer(playerX);
     ai(tab, playerX);
 }
+
+void mines(char tab[L][C]){
+
+    int NotConvertedPosition;
+    int convertedPosition[2];
+    bool invalidPositionForBomb;
+
+    do{
+        printf("Digite a posicao em que deseja plantar a bomba: ");
+        scanf("%d", &NotConvertedPosition);
+    
+        convertPosition(NotConvertedPosition, convertedPosition);
+        invalidPositionForBomb = chekBlankPosition(convertedPosition, tab, false);
+
+        if(invalidPositionForBomb){
+            printf("Posicao invalida, tente novamente...\n");
+        }
+    } while (invalidPositionForBomb);
+    
+    printf("Plantando a bomba");
+    fflush(stdout);
+    for(int i = 0; i < 5; i++){
+        sleep(1);
+        printf(".");
+        fflush(stdout);
+    }
+
+    tab[convertedPosition[0]][convertedPosition[1]] = 'B';
+    printf("Bomba plantada!\n");
+    sleep(1);
+}
