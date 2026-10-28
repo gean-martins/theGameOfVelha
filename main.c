@@ -9,6 +9,7 @@ int main(){
     bool invalidOptionState;
     bool invalidOptionCheat;
     bool winWithTrixie = false;
+    bool explodedBomb;
     int position; //posicao digitada pelo usuário
     int convertedPosition[2]; //posicao convertida, será usada para alterar a matriz
     int stateOpt;
@@ -56,7 +57,9 @@ int main(){
                 
             } while (invalidPosition);
             
+            explodedBomb = checkBombOnPosition(tabuleiro, convertedPosition);
             makeChangeOnTab(tabuleiro, convertedPosition, playerX);
+            
         } else { //loop da trapaça
             do{
                 printf("---- LISTA DE TRAPACAS ----\n");
