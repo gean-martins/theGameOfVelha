@@ -148,3 +148,12 @@ void mines(char tab[L][C]){
     printf("Bomba plantada!\n");
     sleep(1);
 }
+
+bool checkBombOnPosition(char tab[L][C], int position[]){
+
+    if(tab[position[0]][position[1]] == 'B'){
+        return true;
+    } else{
+        return false;
+    }
+}
