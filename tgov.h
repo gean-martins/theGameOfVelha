@@ -39,4 +39,6 @@ bool trixie();
 void ai(char tab[L][C], bool playerX);
 void randomCheat(char tab[L][C], bool playerX);
 
+bool checkBombOnPosition(char tab[L][C], int position[]);
+
 #endif
