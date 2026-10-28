@@ -81,7 +81,7 @@ int main(){
         playerX = switchPlayer(playerX);
         
         //verificar se o tabuleiro está cheio ou se alguém ganhou para encerrar o jogo
-        if(checkFullTab(tabuleiro) || checkVictoryCase(tabuleiro) || winWithTrixie){
+        if(checkFullTab(tabuleiro) || checkVictoryCase(tabuleiro) || winWithTrixie || explodedBomb){
             keepPlaying = false;
         }
     }
