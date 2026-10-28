@@ -52,12 +52,18 @@ int main(){
                     printf("Tentativa de jogar fora do tabuleiro, tente novamente...\n");
                 } else {
                     convertPosition(position, convertedPosition);
-                    invalidPosition = chekBlankPosition(convertedPosition, tabuleiro, true);
+                    explodedBomb = checkBombOnPosition(tabuleiro, convertedPosition);
+
+                    if(!explodedBomb){
+
+                        invalidPosition = chekBlankPosition(convertedPosition, tabuleiro, true);
+                    } else {
+                        invalidPosition = false;
+                    }
                 }
                 
             } while (invalidPosition);
             
-            explodedBomb = checkBombOnPosition(tabuleiro, convertedPosition);
             makeChangeOnTab(tabuleiro, convertedPosition, playerX);
             
         } else { //loop da trapaça
