@@ -141,17 +141,9 @@ void mines(char tab[L][C]){
         }
 
     } while (invalidPositionForBomb);
-    
-    printf("Plantando a bomba");
-    fflush(stdout);
-    for(int i = 0; i < 5; i++){
-        sleep(1);
-        printf(".");
-        fflush(stdout);
-    }
 
     tab[convertedPosition[0]][convertedPosition[1]] = 'B';
-    printf("\nBomba plantada!\n");
+    printf("Bomba plantada!\n");
     sleep(1);
 }
 
