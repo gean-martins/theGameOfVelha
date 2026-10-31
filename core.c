@@ -101,37 +101,37 @@ void makeChangeOnTab(char tab[L][C], int v[], bool playerX){
 bool checkVictoryCase(char tab[L][C]){
 
     //verifica as linhas ---------------------------------------------------
-    if(tab[0][0] != ' ' && tab[0][0] == tab[0][1] && tab[0][1] == tab[0][2]){
+    if((tab[0][0] != ' ' && tab[0][0] != 'B') && tab[0][0] == tab[0][1] && tab[0][1] == tab[0][2]){
         return true;
     }
 
-    if(tab[1][0] != ' ' && tab[1][0] == tab[1][1] && tab[1][1] == tab[1][2]){
+    if((tab[1][0] != ' ' && tab[1][0] != 'B') && tab[1][0] == tab[1][1] && tab[1][1] == tab[1][2]){
         return true;
     }
 
-    if(tab[2][0] != ' ' && tab[2][0] == tab[2][1] && tab[2][1] == tab[2][2]){
+    if((tab[2][0] != ' ' && tab[2][0] != 'B') && tab[2][0] == tab[2][1] && tab[2][1] == tab[2][2]){
         return true;
     }
 
     //verifica as colunas --------------------------------------------------
-    if(tab[0][0] != ' ' && tab[0][0] == tab[1][0] && tab[1][0] == tab[2][0]){
+    if((tab[0][0] != ' ' && tab[0][0] != 'B') && tab[0][0] == tab[1][0] && tab[1][0] == tab[2][0]){
         return true;
     }
 
-    if(tab[0][1] != ' ' && tab[0][1] == tab[1][1] && tab[1][1] == tab[2][1]){
+    if((tab[0][1] != ' ' && tab[0][1] != 'B') && tab[0][1] == tab[1][1] && tab[1][1] == tab[2][1]){
         return true;
     }
 
-    if(tab[0][2] != ' ' && tab[0][2] == tab[1][2] && tab[1][2] == tab[2][2]){
+    if((tab[0][2] != ' ' && tab[0][2] != 'B') && tab[0][2] == tab[1][2] && tab[1][2] == tab[2][2]){
         return true;
     }
 
     //verifica as diagonais -------------------------------------------------
-    if(tab[0][0] != ' ' && tab[0][0] == tab[1][1] && tab[1][1] == tab[2][2]){
+    if((tab[0][0] != ' ' && tab[0][0] != 'B') && tab[0][0] == tab[1][1] && tab[1][1] == tab[2][2]){
         return true;
     }
 
-    if(tab[0][2] != ' ' && tab[0][2] == tab[1][1] && tab[1][1] == tab[2][0]){
+    if((tab[0][2] != ' ' && tab[0][2] != 'B') && tab[0][2] == tab[1][1] && tab[1][1] == tab[2][0]){
         return true;
     }
 
