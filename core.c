@@ -14,7 +14,7 @@ void printTabuleiro(char tab[L][C]){
     for(int i = 0; i < L; i++){
         for(int j = 0; j < C; j++){
 
-            if(tab[i][j] == ' '){
+            if(tab[i][j] == ' ' || tab[i][j] == 'B'){
                 printf("| %d ", k);
             } else{
                 printf("| %c ", tab[i][j]);
