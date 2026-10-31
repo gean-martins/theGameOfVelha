@@ -64,7 +64,9 @@ int main(){
                 
             } while (invalidPosition);
             
-            makeChangeOnTab(tabuleiro, convertedPosition, playerX);
+            if(!explodedBomb){
+                makeChangeOnTab(tabuleiro, convertedPosition, playerX);
+            }
             
         } else { //loop da trapaça
             do{
