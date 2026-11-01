@@ -5,7 +5,7 @@
 
 #include "tgov.h"
 
-void printTabuleiro(char tab[L][C]){
+void printTabuleiro(char tab[L][C], bool showBombs){
 
     int k = 1;
 
@@ -14,13 +14,23 @@ void printTabuleiro(char tab[L][C]){
     for(int i = 0; i < L; i++){
         for(int j = 0; j < C; j++){
 
-            if(tab[i][j] == ' ' || tab[i][j] == 'B'){
-                printf("| %d ", k);
-            } else{
-                printf("| %c ", tab[i][j]);
-            }         
-        
-            k++;
+            //exibe as bombas, comportamento para o final do jogo
+            if(showBombs){
+                if(tab[i][j] == ' '){
+                    printf("| %d ", k);
+                } else{
+                    printf("| %c ", tab[i][j]);
+                }         
+                k++;
+
+            } else { //não exibe as bombas, comportamento durante o jogo
+                if(tab[i][j] == ' ' || tab[i][j] == 'B'){
+                    printf("| %d ", k);
+                } else{
+                    printf("| %c ", tab[i][j]);
+                }  
+                k++;
+            }
         }
         printf("|\n");
         printf("+---+---+---+\n");
