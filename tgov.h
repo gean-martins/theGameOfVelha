@@ -21,7 +21,7 @@
 #define QTD_OF_CHEATS 6
 
 //FUNÇÕES PRINCIPAIS _________________________________________________________________________
-void printTabuleiro(char tab[L][C]);
+void printTabuleiro(char tab[L][C], bool showBombs);
 void convertPosition(int position, int v[]);
 void makeChangeOnTab(char tab[L][C], int v[], bool playerX);
 bool checkVictoryCase(char tab[L][C]);
