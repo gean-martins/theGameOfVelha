@@ -22,7 +22,7 @@ int main(){
     while (keepPlaying){
         system("clear");
         
-        printTabuleiro(tabuleiro);
+        printTabuleiro(tabuleiro, false);
         
         //pergunta se o jogador quer jogar normalmente ou trapacear
         do{
@@ -95,7 +95,7 @@ int main(){
     }
     
     system("clear");
-    printTabuleiro(tabuleiro);
+    printTabuleiro(tabuleiro, true);
     printf("JOGO FINALIZADO!\n");
 
     return 0;
