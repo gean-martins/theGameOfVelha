@@ -20,17 +20,16 @@ void printTabuleiro(char tab[L][C], bool showBombs){
                     printf("| %d ", k);
                 } else{
                     printf("| %c ", tab[i][j]);
-                }         
-                k++;
+                }
 
             } else { //não exibe as bombas, comportamento durante o jogo
                 if(tab[i][j] == ' ' || tab[i][j] == 'B'){
                     printf("| %d ", k);
                 } else{
                     printf("| %c ", tab[i][j]);
-                }  
-                k++;
+                }
             }
+            k++;
         }
         printf("|\n");
         printf("+---+---+---+\n");
