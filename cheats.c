@@ -118,7 +118,7 @@ void randomCheat(char tab[L][C], bool playerX){
     ai(tab, playerX);
 }
 
-void mines(char tab[L][C]){
+bool mines(char tab[L][C]){
 
     int NotConvertedPosition;
     int convertedPosition[2];
@@ -131,6 +131,12 @@ void mines(char tab[L][C]){
         if(NotConvertedPosition >= 1 && NotConvertedPosition <= 9){
             
             convertPosition(NotConvertedPosition, convertedPosition);
+
+            if(checkBombOnPosition(tab, convertedPosition)){
+                //avisar de algum jeito que a bomba DEVE explodir (acabar o jogo)
+                
+            }
+
             invalidPositionForBomb = chekBlankPosition(convertedPosition, tab, false);
             if(invalidPositionForBomb){
                 printf("Posicao invalida, tente novamente...\n");
