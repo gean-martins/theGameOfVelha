@@ -33,7 +33,7 @@ bool switchPlayer(bool playerX);
 //FUNÇÕES DE TRAPAÇA
 bool checkValidOptionForState(int opt);
 bool checkValidOptionForCheat(int opt);
-void cheatRouter(int opt, char tab[L][C], bool* winWithTrixie, bool playerX);
+void cheatRouter(int opt, char tab[L][C], bool* winWithTrixie, bool* explosedBomb, bool playerX);
 void bitFlip(char tab[L][C]);
 bool trixie();
 void ai(char tab[L][C], bool playerX);
