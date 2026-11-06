@@ -60,8 +60,7 @@ int main(){
                     } else {
                         invalidPosition = false;
                     }
-                }
-                
+                }   
             } while (invalidPosition);
             
             if(!explodedBomb){
@@ -83,7 +82,7 @@ int main(){
                 invalidOptionCheat = checkValidOptionForCheat(cheatOpt);
             } while (invalidOptionCheat);
             
-            cheatRouter(cheatOpt, tabuleiro, &winWithTrixie, playerX);
+            cheatRouter(cheatOpt, tabuleiro, &winWithTrixie, &explodedBomb ,playerX);
         }
         
         playerX = switchPlayer(playerX);
