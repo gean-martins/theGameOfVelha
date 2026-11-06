@@ -134,6 +134,8 @@ bool mines(char tab[L][C]){
 
             if(checkBombOnPosition(tab, convertedPosition)){
                 //avisar de algum jeito que a bomba DEVE explodir (acabar o jogo)
+                printf("JA TINHA UMA BOMBA AQUI!\n");
+                sleep(2);
                 return true;
             }
 
