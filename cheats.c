@@ -134,7 +134,7 @@ bool mines(char tab[L][C]){
 
             if(checkBombOnPosition(tab, convertedPosition)){
                 //avisar de algum jeito que a bomba DEVE explodir (acabar o jogo)
-                
+                return true;
             }
 
             invalidPositionForBomb = chekBlankPosition(convertedPosition, tab, false);
