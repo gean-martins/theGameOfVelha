@@ -151,6 +151,8 @@ bool mines(char tab[L][C]){
     tab[convertedPosition[0]][convertedPosition[1]] = 'B';
     printf("Bomba plantada!\n");
     sleep(1);
+
+    return false;
 }
 
 bool checkBombOnPosition(char tab[L][C], int position[]){
