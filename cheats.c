@@ -25,7 +25,7 @@ void cheatRouter(int opt, char tab[L][C], bool* winWithTrixie, bool* explosedBom
         break;
 
     case 5:
-        mines(tab);
+        *explosedBomb = mines(tab);
         break;
 
     case 6:
