@@ -36,14 +36,11 @@ void printTabuleiro(char tab[L][C], bool showBombs){
     }
 }
 
-bool chekBlankPosition(int position[], char tab[L][C], bool playerTrigger){
+bool chekBlankPosition(int position[], char tab[L][C]){
 
     if (tab[position[0]][position[1]] == ' '){
         return false;
     } else {
-        if(playerTrigger){
-            printf("Tentativa de sobrescrita de uma jogada anterior, tente novamente...\n");
-        }
         return true;
     }
 }

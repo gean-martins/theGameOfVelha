@@ -104,7 +104,7 @@ void ai(char tab[L][C], bool playerX){
         randomPositions[0] = rand() % 3;
         randomPositions[1] = rand() % 3;
 
-        invalidRandomPositions = chekBlankPosition(randomPositions, tab, false);
+        invalidRandomPositions = chekBlankPosition(randomPositions, tab);
     } while (invalidRandomPositions);
     
     makeChangeOnTab(tab, randomPositions, playerX);
@@ -139,7 +139,7 @@ bool mines(char tab[L][C]){
                 return true;
             }
 
-            invalidPositionForBomb = chekBlankPosition(convertedPosition, tab, false);
+            invalidPositionForBomb = chekBlankPosition(convertedPosition, tab);
             if(invalidPositionForBomb){
                 printf("Posicao invalida, tente novamente...\n");
             }

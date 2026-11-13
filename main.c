@@ -56,7 +56,12 @@ int main(){
 
                     if(!explodedBomb){
 
-                        invalidPosition = chekBlankPosition(convertedPosition, tabuleiro, true);
+                        invalidPosition = chekBlankPosition(convertedPosition, tabuleiro);
+
+                        if(invalidPosition){
+                            printf("Tentativa de sobrescrita de uma jogada anterior, tente novamente...\n");
+                        }
+
                     } else {
                         invalidPosition = false;
                     }
