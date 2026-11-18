@@ -61,12 +61,12 @@ bool trixie(){
     sleep(5);
 
     do{
-        printf("Digite um numero de 1 a 6: ");
+        printf("Digite um numero de 1 a 3: ");
         scanf("%d", &userNumber);
-        if(userNumber >= 1 && userNumber <= 6){
+        if(userNumber >= 1 && userNumber <= 3){
             invalidNumber = false;
         } else {
-            printf("Ei! Eh pra tentar adivinhar um numero de 1 a 6, tenta de novo...\n");
+            printf("Ei! Eh pra tentar adivinhar um numero de 1 a 3, tenta de novo...\n");
             invalidNumber = true;
         }
 
@@ -80,7 +80,7 @@ bool trixie(){
         fflush(stdout);
     }
 
-    trixieNumber = (rand() % 6) + 1;
+    trixieNumber = (rand() % 3) + 1;
     printf("\n%d!\n", trixieNumber);
     sleep(2);
 
